@@ -113,7 +113,7 @@ main {
 	height: 30vh;
 	background-color: rgb(154, 173, 254);
 	border: 0;
-	border-radius: 4px;
+	border-radius: 20px;
 	transition: 0.2s all ease;
 	cursor: pointer;
 	position: relative;
