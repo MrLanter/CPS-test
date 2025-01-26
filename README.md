@@ -19,4 +19,4 @@ Hello ! J'ai créé ce projet en quelques heures pour le fun et pour m'entraîne
 
 ## Live Site URL
 
-Merci pour votre visite, je vous le lien du Live Site pour tester ce projet: 
+Merci pour votre visite, je vous le lien du Live Site pour tester ce projet: https://mrlanter.github.io/CPS-test/
