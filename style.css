@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Kanit";
+	font-weight: 400;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mode-selector {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.mode-selector button {
+	width: 3rem;
+	height: 3rem;
+	border: 1px solid rgb(229, 149, 149);
+	background-color: white;
+	font-size: 1.3rem;
+	color: rgb(40, 40, 40);
+	font-weight: 300;
+	border-radius: 4px;
+	transition: 0.2s background-color ease;
+	cursor: pointer;
+}
+
+.mode-selector button:hover {
+	background-color: rgb(229, 149, 149);
+	color: white;
+}
+
+.mode-selector .selected {
+	background-color: rgb(236, 109, 109);
+	color: white;
+	border: 1px solid rgb(236, 109, 109);
+}
+
+.mode-selector .selected:hover {
+	background-color: rgb(236, 109, 109);
+}
+
+main {
+	display: flex;
+	gap: 10vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	display: flex;
+	gap: 4vh;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: max-content;
+}
+
+.card .infos {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+}
+
+.card .infos .chrono,
+.counter,
+.average-speed {
+	color: rgb(40, 40, 40);
+}
+
+.card .infos .chrono {
+	position: absolute;
+	left: clamp(0.8rem, 5vw, 10rem);
+	font-size: clamp(2rem, 3vw, 6rem);
+}
+
+.card .infos .counter {
+	font-size: clamp(3rem, 5vw, 10rem);
+	margin: 0 auto;
+}
+
+.card .infos .average-speed {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	position: absolute;
+	right: clamp(0.8rem, 5vw, 10rem);
+	font-size: clamp(2rem, 3vw, 6rem);
+}
+
+.card .infos .average-speed span {
+	font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.click-btn {
+	width: 80vw;
+	height: 30vh;
+	background-color: rgb(154, 173, 254);
+	border: 0;
+	border-radius: 4px;
+	transition: 0.2s all ease;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	padding: 15px;
+}
+
+.click-btn p {
+	font-size: clamp(1rem, 5vw, 3rem);
+	color: white;
+	font-weight: 300;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	user-select: none;
+	transition: 0.05s all ease;
+}
+
+.click-btn::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	translate: -50% -50%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	background-color: rgb(154, 173, 254);
+	z-index: -1;
+	border-radius: 4px;
+	padding: 10px;
+	filter: blur(2rem);
+	opacity: 0.6;
+}
+
+.click-btn:hover {
+	background-color: rgb(84, 112, 240);
+	transform: scale(1.01);
+}
+
+.click-btn:active {
+	transform: scale(1);
+}
+
+.retry {
+	padding: 10px 15px;
+	background-color: rgb(244, 126, 126);
+	border: 0;
+	border-radius: 4px;
+	transition: 0.2s transform ease, 0.2s background-color ease, 0.5s bottom cubic-bezier(0, 0.94, 1, 1);
+	cursor: pointer;
+	position: relative;
+	color: white;
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	z-index: -1;
+	width: clamp(3rem, 40vw, 40rem);
+	translate: -50%;
+}
+
+.retry::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	translate: -50% -50%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	background-color: rgb(244, 126, 126);
+	z-index: -1;
+	border-radius: 4px;
+	padding: 10px;
+	filter: blur(1.5rem);
+	opacity: 0.2;
+}
+
+.retry:hover {
+	background-color: rgb(240, 114, 114);
+	transform: scale(1.02);
+}
