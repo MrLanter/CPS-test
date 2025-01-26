@@ -17,6 +17,6 @@ Hello ! J'ai créé ce projet en quelques heures pour le fun et pour m'entraîne
 -   Le JavaScript manque de structure (et le HTML peut-être aussi) (donc niveau lisibilité et maintenance c'est moyen)
 -   Je n'ai pas utilisé SCSS, ce qui aurait été mieux s'il me venait à l'esprit de poursuivre ce projet
 
-## Outro
+## Live Site URL
 
-Merci pour votre visite, je vous laisse tester ce projet:
+Merci pour votre visite, je vous le lien du Live Site pour tester ce projet: 
